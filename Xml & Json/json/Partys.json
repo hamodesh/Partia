@@ -1,0 +1,43 @@
+{
+	
+	"Partys_info":[
+		{
+			"Partyid":"6",
+			"Partyname":"skylimt",
+			"buildingnumber":"121",
+			"City":"Germany",
+			"namearea":"green",
+			
+			"Area":
+				{
+					"partynumber":"bigshow",
+					"Partyname":"120",
+					"crditprice":"1200",
+					"size":"200",
+					"maixcrdit":"150",
+					"maixprictes":"6",
+
+					"concertsquare":
+					{
+							"nameArtist":"10/8/2022",
+							"Date":"15:00",
+							"starthour":"20:00",
+							"Endhour":"0",
+							"numbercon":"max",
+							"Areanumber":"6",
+
+							"Artist":{
+								"artistid":"212604666",
+								"name":"jaks",
+								"grade":"10"
+								}
+					}
+				}	
+				,
+			"Startdate":"10/8/2020",
+			"Enddate":"11/8/2020",
+			"Adress":"10"
+		}
+	]
+}
+

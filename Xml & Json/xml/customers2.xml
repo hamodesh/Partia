@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Customers_info exportDate="2023-06-01T23:55:54.679">
+  <Customer ID="1">
+    <idparty>1</idparty>
+    <crditnumber>123</crditnumber>
+    <age>19</age>
+  </Customer>
+  <Customer ID="123333">
+    <idparty>12233</idparty>
+    <crditnumber>1233</crditnumber>
+    <age>12333</age>
+  </Customer>
+  <Customer ID="2">
+    <idparty>2</idparty>
+    <crditnumber>123</crditnumber>
+    <age>123</age>
+  </Customer>
+</Customers_info>
