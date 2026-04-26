@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RptPartyMonuth" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="14b19642-277a-4555-ade8-7f3d1746a2f4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="YE5ld1BhcnR5YCAsMTUsMTUsNDdjZWVkNjItZGI5Zi00OTk2LWFhY2YtMzVhODkyZDI0NDQ3Ow=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Dbbouns"/>
+	<parameter name="p1" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT partyname,
+	`Mounth`,
+	`Adress`,
+	`MusicType`,
+	`NumberArtist`,
+	`Area`
+FROM `NewParty`
+WHERE 
+	 `NewParty`.`Area` = $P{p1} 
+GROUP BY `NewParty`.partyname,
+	`NewParty`.`Mounth`,
+	`NewParty`.`Adress`,
+	`NewParty`.`MusicType`,
+	`NewParty`.`NumberArtist`,
+	`NewParty`.`Area`
+ORDER BY `NewParty`.`MusicType` DESC]]>
+	</queryString>
+	<field name="partyname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="partyname"/>
+		<property name="com.jaspersoft.studio.field.label" value="partyname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<field name="Mounth" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Mounth"/>
+		<property name="com.jaspersoft.studio.field.label" value="Mounth"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<field name="Adress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Adress"/>
+		<property name="com.jaspersoft.studio.field.label" value="Adress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<field name="MusicType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MusicType"/>
+		<property name="com.jaspersoft.studio.field.label" value="MusicType"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<field name="NumberArtist" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NumberArtist"/>
+		<property name="com.jaspersoft.studio.field.label" value="NumberArtist"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<field name="Area" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Area"/>
+		<property name="com.jaspersoft.studio.field.label" value="Area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="NewParty"/>
+	</field>
+	<sortField name="Area" order="Descending"/>
+	<group name="Area">
+		<groupExpression><![CDATA[$F{Area}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="226" y="33" width="124" height="30" uuid="c9377351-dcd0-4a7b-b75f-a903795ca5e1"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Report Party]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="754a5c83-58c6-4a48-9367-6c8983186622">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82159d51-dfe3-47b9-80a6-76f4b433635a"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[partyname]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="100" height="30" uuid="7671a77d-cc71-4ede-ac9a-9824dadbe16b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="875e9ffe-c952-4add-b290-3cb3df45b697"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Mounth]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="2e7ac29f-3182-4006-967e-3a8eaddacc44">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a865fba-a0ed-4748-9283-c1c36e2a5994"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Adress]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="100" height="30" uuid="b8b503f8-3dee-4129-9b89-647148421f80">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cda27428-1e23-4fae-84d3-cfe72e5a8921"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[MusicType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="100" height="30" uuid="28272a46-013e-4ea1-afd7-57781682b5ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c65e728c-d5f7-4c32-a9ea-b1e766ff5e26"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[NumberArtist]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="69755cfd-e8fd-4c65-b20e-8e73b3f8632d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="82159d51-dfe3-47b9-80a6-76f4b433635a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{partyname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="100" height="30" uuid="599343b1-4d11-492f-9599-035254e0aef7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="875e9ffe-c952-4add-b290-3cb3df45b697"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Mounth}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="e954edab-1f92-4f91-bef0-691a966150c6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a865fba-a0ed-4748-9283-c1c36e2a5994"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Adress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="f8a0f27b-f42e-4180-b79c-dbfb33591d4c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cda27428-1e23-4fae-84d3-cfe72e5a8921"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{MusicType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="100" height="30" uuid="4fe67ed4-d020-4259-ad2c-3dacf3f2ccea">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c65e728c-d5f7-4c32-a9ea-b1e766ff5e26"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NumberArtist}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

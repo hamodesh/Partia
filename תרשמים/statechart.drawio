@@ -1,0 +1,260 @@
+<mxfile host="Electron" modified="2023-05-21T08:11:43.731Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="z7Cx69FLcoIKXMjpusGU" version="21.2.8" type="device">
+  <diagram name="‫עמוד-1‬" id="kB-d9Nmeu32B4grVJLKe">
+    <mxGraphModel dx="1300" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ognw3msS35_ALOZcSMBK-5" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ognw3msS35_ALOZcSMBK-1" target="ognw3msS35_ALOZcSMBK-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="320" as="sourcePoint" />
+            <mxPoint x="320" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-6" value="&#xa;נדלק ותחילה מבצע העלאה של היישומון&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-12" value="False(UplodTime&amp;lt;=2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-13" value="&#xa;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 11px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;היישמן מופעל&lt;/span&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="111" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-14" value="הישמן נכבד" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="554" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-16" value="True(UplodTime&amp;lt;=2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="230" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-17" value="&lt;br&gt;מתחבר ליישומון&amp;nbsp; (Connect)&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="350" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-22" value="true(failed count):counter++ OR&amp;nbsp; in(connecttime&amp;gt;1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="400" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-29" value="in(conectTime&amp;lt;=1) And (counter&amp;lt;=4)&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="191" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-33" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="450" as="sourcePoint" />
+            <mxPoint x="200" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-36" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.355;entryY=1.042;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ognw3msS35_ALOZcSMBK-39" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="765" y="280" as="sourcePoint" />
+            <mxPoint x="765" y="120" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-38" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0;entryY=0.267;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ognw3msS35_ALOZcSMBK-17" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="200" y="390" as="sourcePoint" />
+            <mxPoint x="260" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-39" value="&#xa;העלאת נתוני המשתתף&#xa;&#xa;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="720" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-40" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" source="ognw3msS35_ALOZcSMBK-39" target="ognw3msS35_ALOZcSMBK-41" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="640" y="300" as="sourcePoint" />
+            <mxPoint x="860" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-41" value="&lt;br&gt;היישומון&amp;nbsp; מוכן לפעולה ומחכה לפקודה" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="920" y="70" width="119" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-42" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.017;entryY=0.659;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="ognw3msS35_ALOZcSMBK-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="449" as="sourcePoint" />
+            <mxPoint x="250" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-49" value="החשבון נחסם" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="650" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-50" value="in(connecttime&amp;gt;1)&amp;nbsp;AND (count==3)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="580" y="400" width="217.5" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-71" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="60" y="300" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-73" value="count:=1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="81" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-75" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="ognw3msS35_ALOZcSMBK-17" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="490" y="400" as="sourcePoint" />
+            <mxPoint x="860" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-80" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="350" y="780" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-81" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="ognw3msS35_ALOZcSMBK-49" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="365" y="570" as="sourcePoint" />
+            <mxPoint x="960" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-84" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ognw3msS35_ALOZcSMBK-71" target="ognw3msS35_ALOZcSMBK-73" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="110" y="340" as="sourcePoint" />
+            <mxPoint x="90" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-120" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="870" as="sourcePoint" />
+            <mxPoint x="30" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-121" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="870" as="sourcePoint" />
+            <mxPoint x="1090" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-122" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1090" y="870" as="sourcePoint" />
+            <mxPoint x="1090" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-123" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="20" as="sourcePoint" />
+            <mxPoint x="1090" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-124" value="מצבי היישומון" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="554" y="20" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-1" value="התחברות הושהה" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="860" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-4" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="201" y="311" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.002;entryY=0.105;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sNikrHEsOh9pHImWuroc-4" target="ognw3msS35_ALOZcSMBK-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="216" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-6" value="אחרי הושהה" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="186" y="281" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-8" value="H" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="905" y="600" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ognw3msS35_ALOZcSMBK-49" target="ognw3msS35_ALOZcSMBK-80" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="200" as="targetPoint" />
+            <mxPoint x="365" y="740" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-10" value="הישמן נכבד" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="812" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-11" value="in(connecttime&amp;gt;1)&amp;nbsp;AND (count==4)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="360" y="600" width="217.5" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-14" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="280" as="sourcePoint" />
+            <mxPoint x="1070" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-15" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="280" as="sourcePoint" />
+            <mxPoint x="50" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-16" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="570" as="sourcePoint" />
+            <mxPoint x="1070" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-17" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="570" as="sourcePoint" />
+            <mxPoint x="1070" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-19" value="ביצוע התחברות" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="490" y="281" width="87.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-29" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" target="ognw3msS35_ALOZcSMBK-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="150" as="targetPoint" />
+            <mxPoint x="135" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ognw3msS35_ALOZcSMBK-1" value="נקלט בה על ידי הפעלת היישומון " style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="81" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-30" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="60" as="sourcePoint" />
+            <mxPoint x="410" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-31" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="200" as="sourcePoint" />
+            <mxPoint x="60" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-32" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="200" as="sourcePoint" />
+            <mxPoint x="410" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-33" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="200" as="sourcePoint" />
+            <mxPoint x="410" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-35" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="90" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-36" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" parent="1" source="sNikrHEsOh9pHImWuroc-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-41" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="sNikrHEsOh9pHImWuroc-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="135" as="targetPoint" />
+            <mxPoint x="410" y="131" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="471" y="131" />
+              <mxPoint x="521" y="130" />
+              <mxPoint x="521" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-43" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" parent="1" vertex="1">
+          <mxGeometry x="569" y="120" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-45" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="sNikrHEsOh9pHImWuroc-8" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="920" y="460" as="sourcePoint" />
+            <mxPoint x="1080" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sNikrHEsOh9pHImWuroc-46" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="200" as="sourcePoint" />
+            <mxPoint x="310" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

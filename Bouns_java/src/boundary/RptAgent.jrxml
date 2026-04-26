@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RptAgent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2112ac1c-29e4-41e1-a684-5881a69a1bf8">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YFRibFJlcG9ydFNob3dqc3BlcmAgLDE4NCwxNSw0YmNjZTM5Ny1jYzAxLTQwZTQtOTg1Ny00NzIw
+YzgxYzgxNWE7YEFnZW50QXJ0aXN0YCAsMzgxLDY5LGU1YjU1ZDkyLTg4YmYtNDJhZi1iYzI0LTBl
+MjY5YWNhY2M2OTtgQXJ0aXN0aW5QYXJ0eWAgLDE1LDUxLGQ4NTJhNjBiLTAyOTEtNDg3Zi1hMDdi
+LTJkMjQwM2I1OTRhZjs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Dbbouns"/>
+	<parameter name="p1" class="java.lang.String"/>
+	<parameter name="p2" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `AgentArtist`.artistid,
+	`TblReportShowjsper`.`Date`,
+	`TblReportShowjsper`.`Starthour`,
+	`TblReportShowjsper`.endhour,
+	`TblReportShowjsper`.`Location`,
+	`TblReportShowjsper`.`Profit`,
+	`ArtistinParty`.partynumber,
+	`ArtistinParty`.typemusic
+FROM `TblReportShowjsper`,
+	`AgentArtist`,
+	`ArtistinParty`
+WHERE 
+	 `AgentArtist`.nameagent = $P{p1} 
+	  AND `ArtistinParty`.idartist = $P{p2} 
+	
+GROUP BY `AgentArtist`.artistid,
+	`TblReportShowjsper`.`Date`,
+	`TblReportShowjsper`.`Starthour`,
+	`TblReportShowjsper`.endhour,
+	`TblReportShowjsper`.`Location`,
+	`TblReportShowjsper`.`Profit`,
+	`ArtistinParty`.partynumber,
+	`ArtistinParty`.typemusic]]>
+	</queryString>
+	<field name="Date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="artistid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="artistid"/>
+		<property name="com.jaspersoft.studio.field.label" value="artistid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="AgentArtist"/>
+	</field>
+	<field name="Starthour" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Starthour"/>
+		<property name="com.jaspersoft.studio.field.label" value="Starthour"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="endhour" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="endhour"/>
+		<property name="com.jaspersoft.studio.field.label" value="endhour"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="Location" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Location"/>
+		<property name="com.jaspersoft.studio.field.label" value="Location"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="Profit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Profit"/>
+		<property name="com.jaspersoft.studio.field.label" value="Profit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="partynumber" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="partynumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="partynumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ArtistinParty"/>
+	</field>
+	<field name="typemusic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="typemusic"/>
+		<property name="com.jaspersoft.studio.field.label" value="typemusic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ArtistinParty"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="24" width="168" height="30" uuid="c474db2a-e406-4a4a-bdf9-b8c1e3221b62"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Report Agent]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="46" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="4ad9cf57-0af2-4129-b0ae-ed9198a5696d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="11e40118-1c5d-449c-9bfd-d76839cb371c"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[artistid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="100" height="30" uuid="a2d84a16-ff00-48d9-8899-6cbfb84c18ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d409e47-4a49-4957-967e-5a91bf51dd34"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="05c34ab2-4a2b-4e37-8eec-b1034aa9eeb4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67ab9f1b-0195-406d-ae3c-0382abc71663"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Starthour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="30" uuid="944b1975-0d01-4a41-81f1-987edc1c05ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1329a0f3-9637-4b63-944c-01b3dbe0645b"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[endhour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="0" width="100" height="30" uuid="a4f291e0-eb24-4677-b0bd-4e70100d02ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e143b1a-5836-4ab4-a9bf-0f734caca8de"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="100" height="30" uuid="f52aca30-9bb7-4173-aeb4-5f280713d26a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34fdd12e-b322-471e-b789-1d7426119115"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Profit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="406" y="0" width="100" height="30" uuid="803b5c9d-cbc9-48e6-89e7-3ca5255b9956">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b03af848-fe35-4877-a3c9-e727a27f5ad0"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[partynumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="503" y="0" width="100" height="30" uuid="cc8c541e-aadd-4aa7-a487-f9e53769cab5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="990fb610-274f-4f94-b945-1717f2e13ab1"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[typemusic]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="5a5f9a83-03ed-4bda-9428-62f9bfc61ca6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="11e40118-1c5d-449c-9bfd-d76839cb371c"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{artistid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="-1" width="100" height="30" uuid="f7d480df-98de-4334-8fcc-8d7bbb012668">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d409e47-4a49-4957-967e-5a91bf51dd34"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="100" height="30" uuid="ee1a239a-9fed-4442-bfc2-cb8e35e95866">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="67ab9f1b-0195-406d-ae3c-0382abc71663"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Starthour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="-1" width="100" height="30" uuid="54608a43-c332-4800-b1c6-8d736da9945f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1329a0f3-9637-4b63-944c-01b3dbe0645b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{endhour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="30" uuid="d44824c2-9105-4a1d-bf60-fac2c6a2eece">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2e143b1a-5836-4ab4-a9bf-0f734caca8de"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="-1" width="100" height="30" uuid="5b0eece0-2022-4345-bfb1-e84184ea0b8e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="34fdd12e-b322-471e-b789-1d7426119115"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Profit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="-1" width="100" height="30" uuid="eae07a6f-bc64-4358-9c38-686076da6945">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b03af848-fe35-4877-a3c9-e727a27f5ad0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{partynumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="-1" width="100" height="30" uuid="c34663b9-1031-423e-9bc7-b4ec16d1ace7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="990fb610-274f-4f94-b945-1717f2e13ab1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{typemusic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Shhade" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="38263fa4-871d-4126-adf7-b0a8729e20a6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Dbbouns"/>
+	<parameter name="p1" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT TblReportShowjsper.Date, TblReportShowjsper.Starthour, TblReportShowjsper.endhour, TblReportShowjsper.Location, TblReportShowjsper.Profit
+FROM TblReportShowjsper
+WHERE TblReportShowjsper.Artistid=$P{p1}
+
+ORDER BY TblReportShowjsper.Date]]>
+	</queryString>
+	<field name="Date" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="Starthour" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Starthour"/>
+		<property name="com.jaspersoft.studio.field.label" value="Starthour"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="endhour" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="endhour"/>
+		<property name="com.jaspersoft.studio.field.label" value="endhour"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="Location" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Location"/>
+		<property name="com.jaspersoft.studio.field.label" value="Location"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<field name="Profit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Profit"/>
+		<property name="com.jaspersoft.studio.field.label" value="Profit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblReportShowjsper"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="20" width="193" height="30" uuid="4de555e1-29c6-4041-bc18-368e86e013a8"/>
+				<textElement>
+					<font size="18" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Report Artist Show"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="29c69ef1-8de9-4259-a4eb-264350352ac1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d7c237a-aa47-405a-b197-ba8f46872c16"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="100" height="30" uuid="639e83d9-5371-4bb0-8d2b-1568f43d3f00">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a28159b3-e806-46a6-9884-4d70779dd3f3"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Starthour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="0" width="100" height="30" uuid="36959888-33fa-4d9c-a302-ca898ec4ded1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d54be376-89e3-4425-b5aa-b1ade17d84a6"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[endhour]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="0" width="100" height="30" uuid="163ae310-1811-44d9-b441-57ff78bf23c7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f1c540d-f954-431d-b7f0-536ba2451087"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="0" width="100" height="30" uuid="e3003be1-6462-467f-b6f3-faf9dfe471fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9007e676-f8fa-406a-8755-a295344900f8"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Profit]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="b7ca48ec-6837-4e98-ab9b-4ce3b4af99ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d7c237a-aa47-405a-b197-ba8f46872c16"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="16270084-6275-43ee-bb87-d750c27cc1cf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a28159b3-e806-46a6-9884-4d70779dd3f3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Starthour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="100" height="30" uuid="acd420d8-22da-4566-b90a-74894d323d4c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d54be376-89e3-4425-b5aa-b1ade17d84a6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{endhour}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="0" width="100" height="30" uuid="e9a72018-0dfb-4102-9dfe-95d85762539d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f1c540d-f954-431d-b7f0-536ba2451087"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Location}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="478" y="0" width="100" height="30" uuid="ef0aa618-1a55-49a4-8d22-0293afe8cd51">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9007e676-f8fa-406a-8755-a295344900f8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Profit}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

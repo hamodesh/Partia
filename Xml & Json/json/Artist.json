@@ -1,0 +1,45 @@
+{
+	
+	"Artist_info":[
+		{
+			"idArtist":"212604631",
+			"partynumber":"1",
+			"nameArtist":"Dawas",
+			"gendr":"male",
+			"typemusic":"Rock",
+			"grade":"10"
+			
+			
+		},
+		{
+			"idArtist":"212604632",
+			"partynumber":"2",
+			"nameArtist":"Shadi",
+			"gendr":"male",
+			"typemusic":"Rock",
+			"grade":"8"
+			
+		},
+		{
+			"idArtist":"212604633",
+			"partynumber":"3",
+			"nameArtist":"shhade",
+			"gendr":"male",
+			"typemusic":"Dramtic",
+			"grade":"10"
+			
+		},
+		
+		{
+			"idArtist":"212604636",
+			"partynumber":"5",
+			"nameArtist":"Yuval",
+			"gendr":"male",
+			"typemusic":"Rap",
+			"grade":"9"
+		
+
+		}
+	]
+}
+

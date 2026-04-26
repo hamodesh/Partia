@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><Customers_info exportDate="2023-06-24T19:38:34.320">
+  <Customer ID="1">
+    <idparty>1</idparty>
+    <crditnumber>1</crditnumber>
+    <age>1</age>
+  </Customer>
+  <Customer ID="2">
+    <idparty>1</idparty>
+    <crditnumber>2000212</crditnumber>
+    <age>20</age>
+  </Customer>
+  <Customer ID="3">
+    <idparty>3</idparty>
+    <crditnumber>3</crditnumber>
+    <age>3</age>
+  </Customer>
+  <Customer ID="4">
+    <idparty>4</idparty>
+    <crditnumber>4</crditnumber>
+    <age>4</age>
+  </Customer>
+  <Customer ID="55">
+    <idparty>5</idparty>
+    <crditnumber>5</crditnumber>
+    <age>5</age>
+  </Customer>
+</Customers_info>
